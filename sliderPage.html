@@ -22,6 +22,18 @@
             <label for="priority">Priority</label>
             <input type="range" id="priority" min="0" max="100" value="50" class="slider-input" oninput="updateSlider('priority')">
         </div>
+
+        <!-- For more sliders, follow template below
+        
+        <div class="slider">
+            <label for="sliderName1">sliderName2</label>
+            <input type="range" id="priority" min="0" max="100" value="50" class="slider-input" oninput="updateSlider('sliderName1')">
+        </div>
+
+        note sliderName1 and sliderName2 can be the same name but start sliderName1 with a lower case, and sliderName2 with upper, makes it easier when debugging if
+        list of sliders becomes large.
+
+        -->
     </div>
 
     <script src="script.js"></script>
