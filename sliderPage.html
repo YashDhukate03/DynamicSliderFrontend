@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Slider Example</title>
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slider">
+            <label for="quality">Quality</label>
+            <input type="range" id="quality" min="0" max="100" value="50" class="slider-input" oninput="updateSlider('quality')">
+        </div>
+
+        <div class="slider">
+            <label for="cost">Cost</label>
+            <input type="range" id="cost" min="0" max="100" value="50" class="slider-input" oninput="updateSlider('cost')">
+        </div>
+
+        <div class="slider">
+            <label for="priority">Priority</label>
+            <input type="range" id="priority" min="0" max="100" value="50" class="slider-input" oninput="updateSlider('priority')">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
