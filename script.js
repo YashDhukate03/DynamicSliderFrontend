@@ -1,9 +1,10 @@
 function updateSlider(sliderType) {
+    // Add all the sliders created, use the name in the html file called as sliderName1
     const qualitySlider = document.getElementById('quality');
     const costSlider = document.getElementById('cost');
     const prioritySlider = document.getElementById('priority');
 
-    // Get the values of each slider
+    // Get the values of each slider, add more if more are created
     const qualityValue = parseInt(qualitySlider.value);
     const costValue = parseInt(costSlider.value);
     const priorityValue = parseInt(prioritySlider.value);
@@ -19,4 +20,6 @@ function updateSlider(sliderType) {
         qualitySlider.value = Math.min(qualityValue, costValue);
         costSlider.value = Math.min(qualityValue, costValue);
     }
+
+    // for any new sliders created, create more if statements and check the values of each one
 }
